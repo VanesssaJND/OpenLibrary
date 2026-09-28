@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catálogo de Portadas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Lista de imágenes con scroll -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Portada 1 -->
+            <ImageView
+                android:id="@+id/imgLibro1"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:background="#DDDDDD"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Portada 2 -->
+            <ImageView
+                android:id="@+id/imgLibro2"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:background="#DDDDDD"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Portada 3 -->
+            <ImageView
+                android:id="@+id/imgLibro3"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:background="#DDDDDD"
+                android:src="@android:drawable/ic_menu_gallery" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Texto que se actualiza al seleccionar una imagen -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción del libro seleccionado:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDescripcionLibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una portada en el carrusel superior para ver los detalles."
+        android:textSize="16sp"
+        android:background="#F5F5F5"
+        android:padding="16dp"/>
+
+</LinearLayout>

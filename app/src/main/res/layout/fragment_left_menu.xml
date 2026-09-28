@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top|center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenBook"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="#3F51B5"/>
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnFotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fotos (Libros)"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Botones" />
+
+</LinearLayout>

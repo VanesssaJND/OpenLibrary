@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgFotoPerfil"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:background="#EEEEEE"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollador / Investigador"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudios Académicos:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvEstudios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Ingeniería de Software (Politécnico Grancolombiano)\n• Diplomado en Arquitectura de Software\n• Certificación en Desarrollo Móvil Nativo Android"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experiencia Profesional:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExperiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desarrollador Junior con experiencia en la construcción de soluciones tecnológicas orientadas a la gestión de información académica. \n\nConocimientos sólidos en lenguajes como Kotlin y Java, y en la implementación de patrones de diseño como Dual-Pane y MVVM. \n\nExperiencia previa en el diseño de interfaces de usuario responsivas utilizando XML y en la conexión con servicios web RESTful mediante Retrofit. \n\nParticipación activa en semilleros de investigación enfocados en la accesibilidad móvil y el uso de repositorios de código abierto como Open Library para la democratización de la información."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+
+    </LinearLayout>
+</ScrollView>

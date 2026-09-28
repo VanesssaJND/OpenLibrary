@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interacciones y Controles"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnAccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Botón de Acción Estándar"
+        android:layout_marginBottom="16dp"/>
+
+    <Switch
+        android:id="@+id/switchModo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activar Modo Oscuro (Simulación)"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consola de eventos:"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvResultadoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Esperando interacción..."
+        android:background="#E0E0E0"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
