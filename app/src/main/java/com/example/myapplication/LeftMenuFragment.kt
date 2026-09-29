@@ -34,10 +34,41 @@ class LeftMenuFragment : Fragment(R.layout.fragment_left_menu) {
         btnWeb = view.findViewById(R.id.btnWeb)
         btnBotones = view.findViewById(R.id.btnBotones)
 
-        btnPerfil.setOnClickListener { listener?.onOptionSelected("PERFIL") }
-        btnFotos.setOnClickListener { listener?.onOptionSelected("FOTOS") }
-        btnVideo.setOnClickListener { listener?.onOptionSelected("VIDEO") }
-        btnWeb.setOnClickListener { listener?.onOptionSelected("WEB") }
-        btnBotones.setOnClickListener { listener?.onOptionSelected("BOTONES") }
+        // Seleccionar perfil por defecto al cargar el menú
+        updateSelectedState(btnPerfil)
+
+        btnPerfil.setOnClickListener {
+            updateSelectedState(btnPerfil)
+            listener?.onOptionSelected("PERFIL")
+        }
+
+        btnFotos.setOnClickListener {
+            updateSelectedState(btnFotos)
+            listener?.onOptionSelected("FOTOS")
+        }
+
+        btnVideo.setOnClickListener {
+            updateSelectedState(btnVideo)
+            listener?.onOptionSelected("VIDEO")
+        }
+
+        btnWeb.setOnClickListener {
+            updateSelectedState(btnWeb)
+            listener?.onOptionSelected("WEB")
+        }
+
+        btnBotones.setOnClickListener {
+            updateSelectedState(btnBotones)
+            listener?.onOptionSelected("BOTONES")
+        }
     }
+
+    private fun updateSelectedState(selectedButton: Button) {
+        btnPerfil.isSelected = (selectedButton == btnPerfil)
+        btnFotos.isSelected = (selectedButton == btnFotos)
+        btnVideo.isSelected = (selectedButton == btnVideo)
+        btnWeb.isSelected = (selectedButton == btnWeb)
+        btnBotones.isSelected = (selectedButton == btnBotones)
+    }
+
 }
